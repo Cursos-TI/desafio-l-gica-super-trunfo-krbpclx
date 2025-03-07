@@ -125,67 +125,30 @@ int main() {
     printf("Escolha: ");
     scanf("%d", &opcao);
 
-    // Uso dos if e else dos dados e do switch para menu interativo e escolha dos atributos.
+    // Uso dos if e else dos dados e do switch.
+    // Operador ternario
 
     switch (opcao)
     {
     case 1:
-        if (populacao > populacao2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (populacao2 > populacao) { 
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-      }
+        (populacao > populacao2) ? printf("** Carta 1 venceu neste atributo! **\n") : (populacao2 > populacao) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 2:
-        if (area > area2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (area2 > area) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (area > area2) ? printf("** Carta 1 venceu neste atributo! **\n") : (area2 > area) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");    
         break;
     case 3:
-        if (pib > pib2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (pib2 > pib) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (pib > pib2) ? printf("** Carta 1 venceu neste atributo! **\n") : (pib2 > pib) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 4:
-        if (turisticos > turisticos2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (turisticos2 > turisticos) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (turisticos > turisticos2) ? printf("** Carta 1 venceu neste atributo! **\n") : (turisticos2 > turisticos) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 5:
-        if (densidadeinv > densidadeinv2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (densidadeinv2 > densidadeinv) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        } 
+        (densidadeinv > densidadeinv2) ? printf("** Carta 1 venceu neste atributo! **\n") : (densidadeinv2 > densidadeinv) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 6:
-        if (pibcapita > pibcapita2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (pibcapita2 > pibcapita) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (pibcapita > pibcapita2) ? printf("** Carta 1 venceu neste atributo! **\n") : (pibcapita2 > pibcapita) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     }
-
-// Segundo menu interativo para escolha do segundo atributo de comparação
 
     printf("\n");
     printf("***Comparação das cartas***\n");
@@ -201,75 +164,32 @@ int main() {
     scanf("%d", &opcao2);
 
     if (opcao == opcao2){
-        printf("Você escolheu o mesmo atributo!");
+        printf("Você escolheu o mesmo atributo!\n");
     } else {
         switch (opcao2)
     {
-    case 1:
-        if (populacao > populacao2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (populacao2 > populacao) { 
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-      }
+        case 1:
+        (populacao > populacao2) ? printf("** Carta 1 venceu neste atributo! **\n") : (populacao2 > populacao) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 2:
-        if (area > area2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (area2 > area) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (area > area2) ? printf("** Carta 1 venceu neste atributo! **\n") : (area2 > area) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");    
         break;
     case 3:
-        if (pib > pib2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (pib2 > pib) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (pib > pib2) ? printf("** Carta 1 venceu neste atributo! **\n") : (pib2 > pib) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 4:
-        if (turisticos > turisticos2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (turisticos2 > turisticos) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (turisticos > turisticos2) ? printf("** Carta 1 venceu neste atributo! **\n") : (turisticos2 > turisticos) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 5:
-        if (densidadeinv > densidadeinv2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (densidadeinv2 > densidadeinv) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        } 
+        (densidadeinv > densidadeinv2) ? printf("** Carta 1 venceu neste atributo! **\n") : (densidadeinv2 > densidadeinv) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     case 6:
-        if (pibcapita > pibcapita2) {
-        printf("** Carta 1 venceu neste atributo! **\n");
-        } else if (pibcapita2 > pibcapita) {
-        printf("** Carta 2 venceu neste atributo! **\n");
-        } else {
-        printf("Houve um empate entre as cartas nesse atributo!\n");
-        }
+        (pibcapita > pibcapita2) ? printf("** Carta 1 venceu neste atributo! **\n") : (pibcapita2 > pibcapita) ? printf("** Carta 2 venceu neste atributo! **\n") : printf("Houve um empate entre as cartas nesse atributo!\n");
         break;
     }
     }
-    // Impressão do vencedor na soma total
     
-    if (superpoder1 > superpoder2) {
-        printf("*** O vencedor é a carta 1! ***\n");
-    } else if (superpoder2 > superpoder1) {
-        printf("*** O vencedor é a carta 2! ***\n");
-    } else {
-        printf("** As cartas possuem o mesmo poder. Empate!! **\n");
-    }
+    (superpoder1 > superpoder2) ? printf("*** O vencedor é a carta 1! ***\n") : (superpoder2 > superpoder1) ? printf("*** O vencedor é a carta 2! ***\n") : printf("** As cartas possuem o mesmo poder. Empate!! **\n");
 
     printf("\n");
     printf("**Fim do jogo**");
